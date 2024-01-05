@@ -52,7 +52,6 @@ def huggingface_setup(): ...
 def wandb_setup(project_name):
     import wandb
     #wandb.login()
-    #"8341d82206b6449a99e9247eaa964cddd9785494"
     key = get_setup_keys("WANDB_API_KEY")
     os.environ["WANDB_API_KEY"] = key["WANDB_API_KEY"]
     # set the wandb project where this run will be logged
